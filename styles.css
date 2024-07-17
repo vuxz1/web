@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes border-gradient {
+    0% {
+        border-color: #ff6b6b;
+    }
+    25% {
+        border-color: #ff9a6b;
+    }
+    50% {
+        border-color: #f1c40f;
+    }
+    75% {
+        border-color: #2ecc71;
+    }
+    100% {
+        border-color: #3498db;
+    }
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid;
+    animation: border-gradient 4s infinite;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
